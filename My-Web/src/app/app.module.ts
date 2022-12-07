@@ -22,11 +22,18 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { NavbarPageComponent } from './navbar-page/navbar-page.component';
+import { FooterPageComponent } from './footer-page/footer-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    NavbarPageComponent,
+    FooterPageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +53,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

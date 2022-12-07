@@ -1,3 +1,4 @@
+
 <header>
     <div class="title">
         <p class="fw-bolder">Login or <a href="url">Signup</a></p>
@@ -11,17 +12,18 @@
       </mdb-form-control>
     
       <mdb-form-control>
-        <input mdbInput type="text" id="form1" class="form-control" />
+        <input mdbInput type="password" id="form1" class="form-control" />
         <label mdbLabel class="form-label" for="form1">Password</label>
       </mdb-form-control>
 </body>
 
   <footer>
-    <button type="button" class="btn btn-outline-primary" style="margin-top: 10px; float: right;">
-        Primary
+    <button (click) = "goToHomePage()" type="button" class="btn btn-outline-primary" style="margin-top: 15px; width: 100%;">
+        Login
       </button>
+
       <div class="forgot-password">
         <p class="fst-italic"><a href="url">forgot password ?</a></p>
       </div>
-  </footer>
- 
+  </footer>   
+<router-outlet></router-outlet>
